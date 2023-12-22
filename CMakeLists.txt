@@ -29,5 +29,6 @@ set_target_properties(${PROJECT_NAME} PROPERTIES
 	CXX_STANDARD_REQUIRED ON
 )
 
+# Read token from file in current directory named `tokenfile`
 file( READ tokenfile token )
 add_definitions( -DTOKEN="${token}" )
